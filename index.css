@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 500px;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #6658df;
+    font-size: 35px;
+}
+
+header p {
+    color: gray;
+    margin-top: 8px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6658df;
+}
+
+button {
+    background: #6658df;
+    color: white;
+    border: none;
+    padding: 12px 17px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5143c5;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f5f4ff;
+    padding: 18px 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stats h2 {
+    color: #6658df;
+    font-size: 25px;
+}
+
+.stats p {
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.heading {
+    margin: 25px 0 15px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: #f7f7fa;
+    margin-bottom: 10px;
+    padding: 13px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-wrap: anywhere;
+}
+
+li span {
+    flex: 1;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    background: #ff4d5a;
+    padding: 7px 10px;
+}
+
+.delete-btn:hover {
+    background: #d93645;
+}
+
+.clear-btn {
+    width: 100%;
+    margin-top: 15px;
+    background: #333;
+}
+
+.clear-btn:hover {
+    background: #111;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 20px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+}
